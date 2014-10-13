@@ -6,7 +6,13 @@ Public Class Form1
         Dim st As String = txtInput.Text
 
         ' Please write your code here!
+        Dim result As String = " "
+        For i As Integer = st.Length - 1 To 0 Step -1
+            result = result & st.Chars(i)
 
-        txtOutput.Text = "Not implemented yet!"
+        Next
+        txtOutput.Text = result
     End Sub
+
+
 End Class
